@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.16.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.16.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+
+<body>
+    <div style="display: flex;">
+
+        <div id="viz"> </div>
+        <div id="rank"> </div>
+    </div>
+    <script>
+
+        var map = "map.vg.json"
+        vegaEmbed("#viz", map);
+
+        var rank = "rank.json"
+        vegaEmbed("#rank", rank);
+    </script>
+</body>
+
+</html>
